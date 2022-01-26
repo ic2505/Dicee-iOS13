@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         
+        // pick randomElements from diceArray
         diceImageViewOne.image = diceArray.randomElement()
         diceImageViewTwo.image = diceArray.randomElement()
 
