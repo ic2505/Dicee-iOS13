@@ -17,10 +17,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // diceImageViewOne.image = #imageLiteral(resourceName: "DiceSix")
         diceImageViewOne.image = #imageLiteral(resourceName: "DiceSix")
         diceImageViewTwo.image = #imageLiteral(resourceName: "DiceTwo")
     }
-
+    
+    // Connection : Action, Type : UI button, Event : Touch Ip Inside
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Button got tapped.")
+        diceImageViewOne.image = #imageLiteral(resourceName: "DiceFour")
+        diceImageViewTwo.image = #imageLiteral(resourceName: "DiceFour")
+    }
     
 }
 
